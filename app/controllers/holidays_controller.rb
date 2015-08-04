@@ -9,11 +9,11 @@ class HolidaysController < ApplicationController
 	end
 
 	def new
-		@holiday = Holiday.new
+		@holiday = current_user.holidays.build
 	end
 
 	def create
-		@holiday = Holiday.new(holiday_params)
+		@holiday = current_user.holidays.build(holiday_params)
 
 		if @holiday.save
 			redirect_to @holiday
