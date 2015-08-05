@@ -8,4 +8,10 @@
 	%h1= @holiday.to 
 	%h1= @holiday.submited
 
+	#answers
+		= render @holiday.answers
+
+		%h3 Answer to request
+		= render "answers/form"
+
 	= link_to "Home", root_path

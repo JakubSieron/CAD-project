@@ -1,6 +1,7 @@
 class HolidaysController < ApplicationController
+	before_action :authenticate_user!
 	before_action :find_holiday, only: [:show]
-	before_action :authenticate_user!, except: [:index, :show]
+	#before_action :current_user && current_user(1) [:show]
 
 	def index
 		@holidays = Holiday.all.order("created_at DESC")
