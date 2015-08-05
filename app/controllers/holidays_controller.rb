@@ -1,5 +1,6 @@
 class HolidaysController < ApplicationController
 	before_action :find_holiday, only: [:show]
+	before_action :authenticate_user!, except: [:index, :show]
 
 	def index
 		@holidays = Holiday.all.order("created_at DESC")
