@@ -72,6 +72,15 @@ body {
 	}
 }
 
+.button {
+	color: #4DB84D;
+	border: 1px solid #4DB84D;
+	padding: .5em, 1em; 
+	border-radius: 0.2em;
+	text-decoration: none;
+	margin-right: 2%;
+}
+
 #holiday_content {
 	background: white;
 	padding: 2em 5%;
@@ -82,4 +91,19 @@ body {
 		color: #47B547;
 		margin-top: 0;
 	}
+	p {
+		color: #B2BAC2;
+		font-size: 0.9rem;
+		font-weight: 100;
+		line-height: 1.5;	
+	}
+}
+
+input[type='submit'] {
+	background: #4DB84D;
+	border: none;
+	color: white;
+	font-weight: 100;
+	padding: .5em 1em;
+	border-radius: .2em;
 }
